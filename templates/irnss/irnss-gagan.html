@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+<div class="row wrapper">
+<div class="col-md-3">
+  <div class="sidebar">
+    <ul>
+      <li><a href="/"><span>IRNSS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+      <li><a href="/irnss/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+      <li><a href="/irnss/gagan/"><span>GAGAN</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+      <li><a target="_blank" href="https://en.wikipedia.org/wiki/Indian_Regional_Navigation_Satellite_System"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+    </ul>
+  </div>
+</div>
+<div class="col-md-7">
+  <h1>GAGAN</h1>
+  <div class="writeup">
+    <p>
+    <em><strong> GPS Aided Geo Augmented Navigation (GAGAN)</strong></em>   is a Satellite Based Augmentation System (SBAS) implemented jointly with Airport Authority of India (AAI). The main objectives of GAGAN are to provide Satellite-based Navigation services with accuracy and integrity required for civil aviation applications and to provide better Air Traffic Management over Indian Airspace. The system will be interoperable with other international SBAS systems and provide seamless navigation across regional boundaries. The first GAGAN navigation payload was flown on GSAT-8 which was launched on May 21, 2011 and the second on GSAT-10 launched on Sep 29, 2012.
+    </p>
+    <p>
+      With GAGAN systems Satellite Navigation based civil aviation has got tremendous boost. The implementation of GAGAN has resulted into numerous benefits to the aviation sector in terms of fuel saving, saving in equipment cost, flight safety, increased air space capacity, efficiency, enhancement of reliability, reduction in work load for operators, coverage of oceanic area for air traffic control, high position accuracy, etc.
+    </p>
+    <div>
+      <p>In addition to aviation sector, GAGAN is expected to bring benefits to other sectors like:</p>
+      <ol class="lis">
+        <li><strong>Navigation and Safety Enhancement in Railways, Roadways, Ships, Spacecraft</strong></li>
+        <li><strong>Geographic Data Collection</strong> </li>
+        <li><strong>Scientific Research for Atmospheric Studies</strong> </li>
+        <li><strong>Geodynamics</strong> </li>
+        <li><strong>Natural Resource and Land Management</strong> </li>
+        <li><strong>Location based services, Mobile, Tourism, etc.</strong> </li>
+      </ol>
+    </div>
+  </div>
+  <div style="text-align: center; margin-bottom: 20px;">
+    <a target="_blank" class="btn btn-primary" href="https://www.sac.gov.in/SACSITE/GAGAN%20&%20IRNSS.pdf">View Brochures</a>
+  </div>
+
+  <div class="iframe-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/k6_Y9M8kYi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+{% endblock %}

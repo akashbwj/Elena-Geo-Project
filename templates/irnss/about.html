@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/about"><span>GNSS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/about/classifications"><span>Classification</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/about/applications"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Satellite_navigation"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>What is GNSS?</h1>
+        <div class="writeup">
+          <p>
+            A <em>satellite navigation</em> or <em>satnav system</em> is a system that uses satellites to provide autonomous geo-spatial positioning. It allows small electronic receivers to determine their location (longitude, latitude, and altitude/elevation) to high precision (within a few centimeters to metres) using time signals transmitted along a line of sight by radio from satellites. The system can be used for providing position, navigation or for tracking the position of something fitted with a receiver (satellite tracking). The signals also allow the electronic receiver to calculate the current local time to high precision, which allows time synchronisation. These uses are collectively known as Positioning, Navigation and Timing (PNT). Satnav systems operate independently of any telephonic or internet reception, though these technologies can enhance the usefulness of the positioning information generated.
+          </p>
+
+          <p>A satellite navigation system with global coverage may be termed a <strong>global navigation satellite system (GNSS)</strong>. As of September 2020, the United States' Global Positioning System (GPS), Russia's Global Navigation Satellite System (GLONASS), China's BeiDou Navigation Satellite System (BDS) and the European Union's Galileo are fully operational GNSSs. Japan's Quasi-Zenith Satellite System (QZSS) is a (US) GPS satellite-based augmentation system to enhance the accuracy of GPS, with satellite navigation independent of GPS scheduled for 2023. <strong>The Indian Regional Navigation Satellite System (IRNSS)</strong> plans to expand to a global version in the long term.</p>
+
+          <p>Global coverage for each system is generally achieved by a satellite constellation of 18–30 medium Earth orbit (MEO) satellites spread between several orbital planes. The actual systems vary, but use orbital inclinations of >50° and orbital periods of roughly twelve hours (at an altitude of about 20,000 kilometres or 12,000 miles).</p>
+          <div>
+            <p>The performance of GNSS is assessed using four criteria:</p>
+            <ol class="lis">
+              <li><strong>Accuracy:</strong> the difference between a receiver’s measured and real position, speed or time.</li>
+              <li><strong>Integrity:</strong> a system’s capacity to provide a threshold of confidence and, in the event of an anomaly in the positioning data, an alarm.</li>
+              <li><strong>Continuity:</strong> a system’s ability to function without interruption.</li>
+              <li><strong>Availability:</strong> the percentage of time a signal fulfils the above accuracy, integrity and continuity criteria.</li>
+            </ol>
+          </div>
+        </div>
+          <div class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CCKisghkcA4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+    {% endblock %}

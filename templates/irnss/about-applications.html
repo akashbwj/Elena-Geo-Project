@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/about"><span>GNSS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/about/classifications"><span>Classification</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/about/applications"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Satellite_navigation" target="_blank" ><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>Applications of GNSS</h1>
+        <div class="writeup">
+          <p>Global Navigation Satellite System (GNSS) receivers, using the GPS, GLONASS, Galileo or BeiDou system, are used in many applications. The first systems were developed in the 20th century, mainly to help military personnel find their way, but location awareness soon found many civilian applications.</p>
+          <h3>Navigation</h3>
+          <ul class="lis">
+            <li>Automobiles can be equipped with GNSS receivers at the factory or as aftermarket equipment. Units often display moving maps and information about location, speed, direction, and nearby streets and points of interest.</li>
+            <li>Air navigation systems usually have a moving map display and are often connected to the autopilot for en-route navigation. Cockpit-mounted GNSS receivers and glass cockpits are appearing in general aviation aircraft of all sizes, using technologies such as WAAS or LAAS to increase accuracy. Many are certified for instrument flight rules navigation, and some can also be used for final approach and landing operations as in Joint precision approach and landing system. Glider pilots use GNSS Flight Recorders to log GNSS data verifying their arrival at turn points in gliding competitions, and for information to aid en route decision making for cross-country soaring.</li>
+            <li>Boats and ships can use GNSS to navigate all of the world's lakes, seas and oceans. Maritime GNSS units include functions useful on water, such as "man overboard" (MOB) functions that allow instantly marking the location where a person has fallen overboard, which simplifies rescue efforts. GNSS may be connected to the ships self-steering gear and Chartplotters using the NMEA 0183 interface. GNSS can also improve the security of shipping traffic by enabling AIS.</li>
+          </ul>
+          <div class="thumbnail" style="display:block;
+          margin-right:auto;
+          margin-left:auto;
+          width:300px;
+          text-align: center;">
+            <img style="width:300px;" class="img-responsive" src="{% static "images/automobile.jpg" %}">
+            <div class="caption-full">
+              <h5>A GPS receiver in civilian automobile use.</h5>
+            </div>
+          </div>
+          <h3>Surveying and mapping</h3>
+          <ul class="lis">
+            <li>Mapping and geographic information systems (GIS) — Most mapping grade GNSS receivers use the carrier wave data from only the L1 frequency, but have a precise crystal oscillator which reduces errors related to receiver clock jitter. This allows positioning errors on the order of one meter or less in real-time, with a differential GNSS signal received using a separate radio receiver. By storing the carrier phase measurements and differentially post-processing the data, positioning errors on the order of 10 centimeters are possible with these receivers.</li>
+            <li>Geophysics and geology — High precision measurements of crustal strain can be made with differential GNSS by finding the relative displacement between GNSS sensors. Multiple stations situated around an actively deforming area (such as a volcano or fault zone) can be used to find strain and ground movement. These measurements can then be used to interpret the cause of the deformation, such as a dike or sill beneath the surface of an active volcano.</li>
+            <li>Archaeology — As archaeologists excavate a site, they generally make a three-dimensional map of the site, detailing where each artifact is found.</li>
+            <li>Surveying — Survey-Grade GNSS receivers can be used to position survey markers, buildings, and road construction. These units use the signal from both the L1 and L2 GPS frequencies. Even though the L2 code data are encrypted, the signal's carrier wave enables correction of some ionospheric errors. These dual-frequency GPS receivers typically cost US$10,000 or more, but can have positioning errors on the order of one centimetre or less when used in carrier phase differential GPS mode.</li>
+          </ul>
+          <h3>Other uses</h3>
+          <ul class="lis">
+            <li>Military precision-guided munitions – Many types of munitions, including JDAM bombs, Excalibur 155 mm artillery shell, use GNSS to guide them to their target.</li>
+            <li>Precise time reference – Many systems that must be accurately synchronized use GNSS as a source of accurate time. GNSS can be used as a reference clock for time code generators or Network Time Protocol (NTP) time servers. Sensors (for seismology or other monitoring application) can use GNSS as a precise time source. Time-division multiple access (TDMA) communications networks often rely on this precise timing to synchronize RF generating equipment, network equipment, and multiplexers.</li>
+          </ul>
+        </div>
+        <div style="text-align: center">
+          <a target="_blank" class="btn btn-primary" href="https://en.wikipedia.org/wiki/GNSS_applications">Read More...</a>
+        </div>
+      </div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/gps"><span>GPS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/gps/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/gps/future/"><span>Future of GPS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="https://www.gps.gov/"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1 >Applications of GPS</h1>
+        <div class="writeup">
+          <p>Like the Internet, GPS is an essential element of the global information infrastructure. The free, open, and dependable nature of GPS has led to the
+            development of hundreds of applications affecting every aspect of modern life. GPS technology is now in everything from cell phones and wristwatches
+            to bulldozers, shipping containers, and ATM's.</p>
+
+            <p>GPS boosts productivity across a wide swath of the economy, to include farming, construction, mining, surveying, package delivery, and logistical supply
+              chain management. Major communications networks, banking systems, financial markets, and power grids depend heavily on GPS for precise time
+              synchronization. Some wireless services cannot operate without it.</p>
+
+              <p> GPS saves lives by preventing transportation accidents, aiding search and rescue efforts, and speeding the delivery of emergency services and disaster
+              relief. GPS is vital to the Next Generation Air Transportation System (NextGen) that will enhance flight safety while increasing airspace capacity.
+              GPS also advances scientific aims such as weather forecasting, earthquake monitoring, and environmental protection.</p>
+
+              <p>GPS remains critical to U.S. national security, and its applications are integrated into virtually every facet of U.S. military operations.
+              Nearly all new military assets -- from vehicles to munitions -- come equipped with GPS.</p>
+
+            <p>Some More Examples of GPS Applications are:</p>
+            <ol class="lis">
+              <li><strong>Aviation: </strong>Aviators throughout the world use the Global Positioning System (GPS) to increase the safety and efficiency of flight.
+                 With its accurate, continuous, and global capabilities, GPS offers seamless satellite navigation services that satisfy many of the requirements for
+                 aviation users.</li>
+              <li><strong>Environment: </strong>To sustain the Earth's environment while balancing human needs requires better decision making with more up-to-date
+                information. Gathering accurate and timely information has been one of the greatest challenges facing both government and private organizations
+                that must make these decisions. The Global Positioning System (GPS) helps to address that need.</li>
+              <li><strong>Marine: </strong>GPS provides the fastest and most accurate method for mariners to navigate, measure speed, and determine location.
+                 This enables increased levels of safety and efficiency for mariners worldwide.</li>
+              <li><strong>Space: </strong>The Global Positioning System (GPS) is revolutionizing and revitalizing the way nations operate in space, from guidance systems
+                 for crewed vehicles to the management, tracking, and control of communication satellite constellations, to monitoring the Earth from space. </li>
+              <li><strong>Surveying & Mapping: </strong>When used by skilled professionals, GPS provides surveying and mapping data of the highest accuracy. GPS-based
+                 data collection is much faster than conventional surveying and mapping techniques, reducing the amount of equipment and labor required. A single
+                 surveyor can now accomplish in one day what once took an entire team weeks to do.</li>
+              <li><strong>Timing: </strong>In addition to longitude, latitude, and altitude, the Global Positioning System (GPS) provides a critical fourth
+                dimension – time. Each GPS satellite contains multiple atomic clocks that contribute very precise time data to the GPS signals. GPS receivers decode
+                 these signals, effectively synchronizing each receiver to the atomic clocks. This enables users to determine the time to within 100 billionths of a
+                 second, without the cost of owning and operating atomic clocks.</li>
+            </ol>
+        </div>
+      </div>
+</div>
+    {% endblock %}

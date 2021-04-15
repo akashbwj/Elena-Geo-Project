@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/about"><span>GNSS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/about/classifications"><span>Classification</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/about/applications"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Satellite_navigation"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>Classification of GNSS</h1>
+        <div class="writeup">
+          <p>GNSS systems that provide enhanced accuracy and integrity monitoring usable for civil navigation are classified as follows:</p>
+            <ul class="lis">
+              <li><strong>GNSS-1</strong> is the first generation system and is the combination of existing satellite navigation systems (GPS and GLONASS), with Satellite Based Augmentation Systems (SBAS) or Ground Based Augmentation Systems (GBAS). In the United States, the satellite based component is the Wide Area Augmentation System (WAAS), in Europe it is the European Geostationary Navigation Overlay Service (EGNOS), and in Japan it is the Multi-Functional Satellite Augmentation System (MSAS). Ground based augmentation is provided by systems like the Local Area Augmentation System (LAAS).</li>
+              <li><strong>GNSS-2</strong> is the second generation of systems that independently provides a full civilian satellite navigation system, exemplified by the European Galileo positioning system. These systems will provide the accuracy and integrity monitoring necessary for civil navigation; including aircraft. Initially, this system consisted of only Upper L Band frequency sets (L1 for GPS, E1 for Galileo, G1 for GLONASS). In recent years, GNSS systems have begun activating Lower L-Band frequency sets (L2 and L5 for GPS, E5a and E5b for Galileo, G3 for GLONASS) for civilian use; they feature higher aggregate accuracy and fewer problems with signal reflection. As of late 2018, a few consumer grade GNSS devices are being sold that leverage both, and are typically called "Dual band GNSS" or "Dual band GPS" devices.</li>
+            </ul>
+
+          <p>By their roles in the navigation system, systems can be classified as:</p>
+          <ul class="lis">
+            <li><strong>Core Satellite navigation systems</strong>, currently GPS (United States), GLONASS (Russian Federation), Beidou (China) and Galileo (European Union).</li>
+            <li><strong>Global Satellite Based Augmentation Systems (SBAS)</strong> such as Omnistar and StarFire.</li>
+            <li><strong>Regional SBAS</strong> including WAAS (US), EGNOS (EU), MSAS (Japan) and <em>GAGAN (India)</em>.</li>
+            <li><strong>Regional Satellite Navigation Systems</strong> such as <em>India's NAVIC</em>, and Japan's QZSS.</li>
+            <li><strong>Continental scale Ground Based Augmentation Systems (GBAS)</strong> for example the Australian GRAS and the joint US Coast Guard, Canadian Coast Guard, US Army Corps of Engineers and US Department of Transportation National Differential GPS (DGPS) service.</li>
+            <li><strong>Regional scale GBAS</strong> such as CORS networks.</li>
+            <li><strong>Local GBAS</strong> typified by a single GPS reference station operating Real Time Kinematic (RTK) corrections.</li>
+            <li>As many of the global GNSS systems (and augmentation systems) use similar frequencies and signals around L1, many "Multi-GNSS" receivers capable of using multiple systems have been produced. While some systems strive to interoperate with GPS as well as possible by providing the same clock, others do not.</li>
+          </ul>
+
+            </div>
+
+      </div>
+    </div>
+    {% endblock %}

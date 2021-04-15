@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/qzss"><span>QZSS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/qzss/qzo/"><span>QZO</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/qzss/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="https://qzss.go.jp/en/"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1 >Quasi-Zenith Satellite Orbit (QZO)</h1>
+
+        <div class="writeup">
+          <p>QZSS is a system especially for usage in the Asia-Oceania regions, with a focus on Japan. The ideal would be to have satellites
+            stand constantly still in the sky above Japan. However, satellites cannot be made stationary due to the different directions of centrifugal force and
+             the gravitational pull of the earth.</p>
+
+          <p>Geostationary satellites are made to stand still in the sky above the equator at a fixed longitude so they can be seen at any time from the earth’s surface.
+            When these oscillate from north to south, they are on an “inclined geostationary orbit (GEO)”—a symmetrical north-south orbit shaped like a figure eight.
+            Among the satellites on inclined GEO, satellites on quasi-zenith orbits (QZO) have a slower speed in the northern hemisphere by moving away from the earth,
+            and a faster speed in the southern hemisphere by coming closer to the earth.</p>
+
+          <p> For that reason, the QZO of QZSS is a figure-eight shaped orbit with north-south asymmetry. Satellites spend approximately 13 hours in the northern
+            hemisphere and roughly 11 hours in the southern hemisphere, allowing them to remain near Japan for a long period of time.</p>
+            <img class="img-responsive thumbnail" src="{% static "images/qzo1.jpg" %}">
+
+          <p>When the QZSS has become a four-satellite constellation, three satellites will be deployed on the QZO. QZO satellites will remain for eight hours at
+            an elevation angle of 70° or more, 12 hours at 50° or more, and 16 hours at 20° or more as seen from areas near Tokyo.</p>
+
+          <p> Three satellites will appear in order every eight hours; at least one satellite will be located near the zenith, with an elevation angle of 70° or more.
+            However, it will not always stand at the zenith (directly overhead); this is where the name “quasi-zenith” comes from. The four-satellite-constellation QZSS
+            is composed of these satellites that revolve on the QZO, as well as one satellite on a GEO above the equator.</p>
+          <img class="img-responsive thumbnail" src="{% static "images/qzo2.png" %}">
+        </div>
+        <div class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZRH4-SPtOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+</div>
+    {% endblock %}

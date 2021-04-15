@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/qzss"><span>QZSS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/qzss/qzo/"><span>QZO</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/qzss/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="https://qzss.go.jp/en/"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1 >Applications of QZSS</h1>
+
+        <div class="writeup">
+          <p>In Japan, mobile penetration rate has reached 92.4% in 2010
+            and almost 50% of mobile terminals have GPS functions, so
+            positioning information using satellites is imperative to
+            peoples' lives.</p>
+            <p>The successful launch of QZSS, MICHIBIKI (which means
+            "Guidance" in Japanese) has helped to make our society more
+            secure and comfortable as it enhances the accuracy of
+            positioning information and makes it ubiquitous.</p>
+            <p> Japan has established technology to utilize GPS signals for
+            navigation systems, and the high-accuracy QZSS positioning
+            system promises to expand the possibilities in a variety of
+            fields.</p>
+
+            <p>Examples of QZSS Applications:</p>
+            <ol class="lis">
+              <li><strong>Environment Conservation:</strong>Combination of LBS (Location Based Services) and value-added satellite remote sensing information provides
+                advanced telematics, which solves traffic problems and reduces exhaust fumes and energy consumption.</li>
+              <li><strong>Realizing Secure Society:</strong>Sending location, time, images, etc. to Operations Center in case of an accident.</li>
+              <li><strong>Agriculture Business:</strong>Solutions to issues like deviation of farm field soil component and  difficulties of optium harvesting
+                 utilizing GNSS and Satellite Remote Sensing.</li>
+              <li><strong>Personal Services:</strong>Utilizing AR (Augmented Reality) technology, old-time CG landscape, historical photos, etc. could be displayed.</li>
+            </ol>
+        </div>
+        <div class="thumbnail" style="display:block;
+        margin-right:auto;
+        margin-left:auto;
+        width:fit-content;
+        text-align: center;">
+          <img class="img-responsive" src="{% static "images/appli_qzss.PNG" %}">
+          <div class="caption-full">
+            <h5>Some Applications of QZSS</h5>
+          </div>
+        </div>
+      </div>
+</div>
+    {% endblock %}

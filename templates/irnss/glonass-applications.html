@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/glonass"><span>Glonass</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/glonass/characteristics"><span>Characteristics</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/glonass/applications"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a target="_blank" href="https://gssc.esa.int/navipedia/index.php/GLONASS_General_Introduction"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>Applications of Glonass</h1>
+        <div class="writeup">
+            <p>Many applications use GLONASS to collect position, velocity and time information to be used by them for various purposes.</p>
+
+
+          <p>Any navigation solution provided by a GNSS Receiver is based on the computation of its distance to a set of satellites, by means of extracting the propagation time of the incoming signals traveling through space at the speed of light, according to the satellite and receiver local clocks.</p>
+          <div>
+            <p>Global navigation and time synchronization provides service to unlimited number of users on ground, on sea, airborne and in space:</p>
+            <ol class="lis">
+              <li>Armed Forces</li>
+              <li>Communication and energy systems synchronization</li>
+              <li>Geodesy:GLONASS and GLONASS\GPS receivers are used to determine precise coordinates of points and land parcel boundaries</li>
+              <li>Cartography: GLONASS is used in civilian and military cartography</li>
+              <li>Tectonics: tectonic plates movements and convulsions are tracked using satellites</li>
+              <li>Navigation: global positioning systems are used for maritime and roadway navigation</li>
+              <li>Satellite monitoring:ERA-GLONASS project is motor vehicle position and velocity monitoring and control over their movements</li>
+              <li>Complex engineering structures monitoring</li>
+              <li>Animals monitoring, environmental protection</li>
+              <li>Search and rescue facilitation</li>
+              <li>Personal trackers, "panic button"</li>
+            </ol>
+          </div>
+          <div class="irnss-img thumbnail" style="margin-bottom:20px">
+            <img class="img-responsive" src="{% static "images/glonass_app.jpg" %}"></img>
+          </div>
+          <h3>Commercial use:</h3>
+
+              <p>Although the GLONASS constellation is nearing global coverage, its commercialization, especially development of the user segment, has been lacking compared to the U.S. GPS system.</p>
+
+
+
+
+              <div>
+                <p>Commercial response to GLONASS improved accuracy has lead to several recent announcements that include:</p>
+                <ol class="lis">
+                  <li>Qualcomm has announced the first GLONASS capable phone (MTS 945 from ZTE): "ZTE is first to market with a smartphone that supports both the GPS and GLONASS satellite systems, taking full advantage of the functionality which has been integrated into our Snapdragon MSM7x30 chipset and software”.</li>
+                  <li>In February 2011, ST-Ericsson launched “the world’s smallest receiver” to connect to both GPS and GLONASS satellites.</li>
+                  <li>Broadcom Corporation, a global leader in semiconductors for wired and wireless communications, announced two new GPS system-on-a-chip solutions that include support for the GLONASS Russian Navigation Satellite System.</li>
+                  <li>In April 2011, Sweden’s Swepos became the first foreign company to use Russia’s GLONASS positioning technology, due to Swepos’ conviction that it is better than GPS at northern latitudes.</li>
+                </ol>
+              </div>
+        </div>
+
+      </div>
+    </div>
+    {% endblock %}

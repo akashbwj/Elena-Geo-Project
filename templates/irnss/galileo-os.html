@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/galileo"><span>Galileo</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/galileo/os"><span>System Description</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/galileo/applications"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a target="_blank" href="https://www.gsa.europa.eu/european-gnss/galileo/galileo-european-global-satellite-based-navigation-system"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>System Description</h1>
+        <div class="writeup">
+          <p>
+            The complete Galileo constellation will comprise satellites spread evenly around three orbital planes inclined at an angle of 56 degrees to the equator. Each satellite will take about 14 hours to orbit the Earth. One satellite in each plane will be a spare, on stand-by should any operational satellite fail.</p>
+            <p>
+               From most locations, six to eight satellites will always be visible, allowing positions and timing to be determined very accurately to within a few centimetres. Interoperability with the US system of GPS satellites will only increase the reliability of Galileo services.
+
+            </p>
+
+          <div class="irnss-img thumbnail" style="margin-bottom:20px">
+            <img class="img-responsive" src="{% static "images/galileo_constellation1.jpg" %}"></img>
+          </div>
+
+
+          <div>
+            <h3>System description</h3>
+            <p><em>Space segment:</em></p>
+            <p>As of 2012, the system was scheduled to have 15 satellites operational in 2015 and reach full operation in 2020 with the following specifications:</p>
+            <ol class="lis">
+              <li>30 in-orbit spacecraft (24 in full service and 6 spares)
+              </li>
+              <li> Orbital altitude: 23,222 km (MEO) </li>
+              <li>3 orbital planes, 56.0° inclination, ascending nodes separated by 120.0° longitude (8 operational satellites and 2 active spares per orbital plane)</li>
+              <li>Satellite lifetime: >12 years</li>
+              <li>Satellite mass: 675 kg</li>
+              <li>Satellite body dimensions: 2.7 × 1.2 × 1.1 metre</li>
+              <li>Span of solar arrays: 18.7 metre</li>
+              <li>Power of solar arrays: 1.5 kW (end of life)</li>
+              <li>Power of navigation antennas: 155-265 W</li>
+          </div>
+
+          <div>
+
+            <p><em>Ground segment</em></p>
+
+            <p>The system's orbit and signal accuracy is controlled by a ground segment consisting of:</p>
+            <ol class="lis">
+              <li>Two ground control centres, located in Oberpfaffenhofen and Fucino for Satellite and Mission Control
+              </li>
+              <li> Six telemetry, tracking & control (TT&C) stations, located in Kiruna, Kourou, Nouméa, Sainte-Marie, Réunion, Redu and Papeete </li>
+              <li>Ten mission data uplink stations (ULS), two per site, located in Svalbard, Kourou, Papeete, Sainte-Marie, Réunion and Nouméa</li>
+              <li>Several worldwide distributed reference sensor stations (GSS)</li>
+              <li>A data dissemination network between all geographically distributed locations</li>
+              <li>One service centre, located in Madrid, to help Galileo users</li>
+              <li>Span of solar arrays: 18.7 metre</li>
+              <li>Power of solar arrays: 1.5 kW (end of life)</li>
+              <li>Power of navigation antennas: 155-265 W</li>
+          </div>
+        </div>
+        <div class="irnss-img thumbnail">
+          <img class="img-responsive" src="{% static "images/Galileo_gif.gif" %}"></img>
+        </div>
+      </div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/gps"><span>GPS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/gps/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/gps/future/"><span>Future of GPS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="https://www.gps.gov/"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1 >What is GPS?</h1>
+        <div class="writeup">
+          <p>The <strong>Global Positioning System (GPS)</strong> is a U.S.-owned utility that provides users with positioning, navigation, and timing (PNT) services. This system
+            consists of three segments: the space segment, the control segment, and the user segment. The U.S. Space Force develops, maintains, and operates the space
+            and control segments.</p>
+            <h3>Space Segment</h3>
+            <p>The GPS space segment consists of a constellation of satellites transmitting radio signals to users.The United States is committed to maintaining
+            the availability of at least 24 operational GPS satellites, 95% of the time. To ensure this commitment, the U.S. Space Force has been flying 31 operational
+            GPS satellites for well over a decade.The satellites in the GPS constellation are arranged into six equally-spaced orbital planes surrounding the Earth.
+             Each plane contains four "slots" occupied by baseline satellites. This 24-slot arrangement ensures users can view at least four satellites from virtually
+            any point on the planet. The Space Force normally flies more than 24 GPS satellites to maintain coverage whenever the baseline satellites are serviced or
+            decommissioned. The extra satellites may increase GPS performance but are not considered part of the core constellation.</p>
+            <div class="thumbnail expand-on-small" >
+              <img class="img-responsive" src="{% static "images/constellation.jpg" %}">
+              <div class="caption-full">
+                <h5>Expandable 24-Slot satellite constellation, as defined in the SPS Performance Standard.</h5>
+              </div>
+            </div>
+            <h3>Control Segment</h3>
+            <p>The GPS control segment consists of a global network of ground facilities that track the GPS satellites, monitor their transmissions, perform analyses,
+               and send commands and data to the constellation. The current Operational Control Segment (OCS) includes a master control station, an alternate master
+               control station, 11 command and control antennas, and 16 monitoring sites.The locations of these facilities are shown in the map as shown.</p>
+            <img class="img-responsive thumbnail" src="{% static "images/22.png" %}">
+            <h3>User Segment</h3>
+            <p> The user segment (US) is composed of hundreds of thousands of U.S. and allied military users of the secure GPS Precise Positioning Service, and tens of
+             millions of civil, commercial and scientific users of the Standard Positioning Service. In general, GPS receivers are composed of an antenna, tuned to the
+              frequencies transmitted by the satellites, receiver-processors, and a highly stable clock (often a crystal oscillator). They may also include a display for
+              providing location and speed information to the user. A receiver is often described by its number of channels; this signifies how many satellites it can
+              monitor simultaneously.</p>
+            <div class="iframe-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed//wCcARVbL_Dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+      </div>
+</div>
+    {% endblock %}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/glonass"><span>Glonass</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/glonass/characteristics"><span>Characteristics</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/glonass/applications"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a target="_blank" href="https://gssc.esa.int/navipedia/index.php/GLONASS_General_Introduction"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>What is Glonass?</h1>
+        <div class="writeup">
+          <p>
+            <em>Glonass</em> is a space-based global navigation satellite system (GNSS) that provides reliable positioning, navigation, and timing services to users on a continuous worldwide basis freely available to all.
+          </p>
+          <div class="irnss-img thumbnail" style="margin-bottom:20px">
+            <img class="img-responsive" src="{% static "images/history_glonass_img.jpg" %}" width="90%"></img>
+          </div>
+
+          <p>Flight tests of high altitude (20000 km) satellite navigation system, called GLONASS were started in 12 October 1982 with the launch of the Kosmos-1413, Kosmos-1414, and Kosmos-1415. After the dissolution of the Soviet Union in 1991, the system was continued by the Russian Federation which formally declared the system operational in 1993 and brought to its optimal status of 24 operational satellites in 1995.</p>
+
+          <p>The GLONASS constellation provides visibility to a variable number of satellites, depending on your location. A minimum of four satellites in view allows a GLONASS receiver to compute its position in three dimensions and to synchronize with system time.</p>
+          <div>
+            <p>GLONASS Satellite Constellation consists of:</p>
+            <ol class="lis">
+              <li>The GLONASS space segment consists of 24 satellites, in three orbital planes, with eight satellites per plane.</li>
+              <li>The orbit period of each satellite is approximately 8/17 of a sidereal1 day so that, after eight sidereal days, the GLONASS satellites have completed exactly 17 orbital revolutions.</li>
+              <li>The satellites are placed into nominally circular orbits with target inclinations of 64.8 degrees and an orbital radius of 19,140 km, about 1,060 km lower than GPS satellites.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="irnss-img thumbnail" style="margin-bottom:20px">
+          <img class="img-responsive" src="{% static "images/glonass_info.jpg" %}" width="90%"></img>
+        </div>
+      </div>
+    </div>
+    {% endblock %}

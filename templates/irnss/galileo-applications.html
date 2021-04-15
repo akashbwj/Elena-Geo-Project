@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/galileo"><span>Galileo</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/galileo/os"><span>System Description</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/galileo/applications"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a target="_blank" href="https://www.gsa.europa.eu/european-gnss/galileo/galileo-european-global-satellite-based-navigation-system"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>Applications of Galileo</h1>
+        <div class="writeup">
+          <p>
+         A global navigation satellite system (GNSS), such as Galileo, allows users to determine their location and the location of other people or objects at any given moment, along with the ability to determine their velocity and the current system time.
+       </p>
+       <div class="irnss-img thumbnail" style="margin-bottom:20px;width:93%;display:block;
+       margin-right:auto;
+       margin-left:auto;">
+         <img class="img-responsive" src="{% static "images/Galileo_sat.gif" %}"></img>
+       </div>
+
+       <p>The range of envisaged applications of Galileo is enormous, spanning both the public and private sectors across numerous market segments.</p>
+
+       <div>
+         <p>For example, when fully operational, Galileo will play a role in many applications such as:</p>
+         <ol class="lis">
+           <li><strong>The Internet of Things:</strong> As part of a ‘system of systems’, Galileo will play a key role in IoT, providing the positioning, velocity and timing information required by an increasing number of context-aware applications. For example, thanks to its signal strength, with Galileo, IoT users will enjoy better accuracy and availability in such difficult environments as in the city.  </li>
+           <li><strong>Location-based services (LBS):</strong> LBS is the broader market for Galileo and provides users, wherever they are, with information and advertising about nearby businesses and services.Dedicated positioning devices will increasingly represent a fundamental tool for tourists and hikers, amusement park and museum visitors, and those shopping at large commercial centres.</li>
+           <li><strong>Emergency, security and humanitarian services:</strong> Galileo-enabled devices will provide new security-related applications, helping to locate stolen property, lost pets and missing persons.</li>
+           <li><strong>Transport</strong> Satellite navigation improves the way we use vehicles, meaning increased traffic safety and efficiency (which in turns contribute to reduce pollution). In road transport, Galileo’s highly accurate and reliable signals play an important role in fleet management, delivering the vehicle’s positioning on a map and helping to locate specific shipments. Its signals deliver similar benefits in aviation, maritime, rail, and even pedestrian traffic.   </li>
+           <li><strong>Agriculture</strong> By integrating Galileo signals with other technologies, the agriculture community benefits from an improved monitoring of the distribution and dilution of chemicals, improved parcel yield thanks to customised treatment, and more efficient property management.</li>
+           <li><strong>Fisheries</strong> Galileo provides the fishing industry with a more effective exchange of information between vessels and stations, and fishermen with improved navigational aids.</li>
+           <li><strong>Civil engineering</strong> In civil engineering, accuracy and reliability are absolute musts. When combined with digital mapping, Galileo offers a powerful tool for decreasing costs and increasing productivity.
+           </li>
+           <li><strong>Science, environment, weather:</strong> Galileo will support scientific research in such areas as meteorology, geology and geodesy, in tracking pollutants, dangerous goods and icebergs, and in the mapping and measuring of oceans, tides and sea levels.</li>
+         </ol>
+       </div>
+        </div>
+        <div class="irnss-img thumbnail">
+          <img class="img-responsive" src="{% static "images/galileo4mobility.jpg" %}"></img>
+        </div>
+      </div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/qzss"><span>QZSS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/qzss/qzo/"><span>QZO</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/qzss/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="https://qzss.go.jp/en/"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1 >What is QZSS?</h1>
+
+        <div class="writeup">
+          <p>The <strong>Quasi-Zenith Satellite System (QZSS)</strong>, also known as <em>Michibiki</em> , is a four-satellite regional time transfer system and a satellite-based
+            augmentation system development by the Japanese government to enhance the United States-operated Global Positioning System (GPS) in the Asia-Oceania regions,
+             with a focus on Japan. The goal of QZSS is to provide highly precise and stable positioning services in the Asia-Oceania region, compatible with GPS.
+              Four-satellite QZSS services were available on a trial basis as of January 12, 2018, and officially started on November 1, 2018. A satellite navigation
+              system independent of GPS is planned for 2023 with 7 satellites.
+            </p>
+            <div class="thumbnail" style="display:block;
+            margin-right:auto;
+            margin-left:auto;
+            width:300px;
+            text-align: center;">
+              <img class="img-responsive" src="{% static "images/QZSS_logo.png" %}">
+            </div>
+          <p>QZSS uses one geostationary satellite and three satellites in Tundra-type highly inclined, slightly elliptical, geosynchronous orbits.
+             Each orbit is 120° apart from the other two. Because of this inclination, they are not geostationary; they do not remain in the same place in the sky.
+              Instead, their ground traces are asymmetrical figure-8 patterns (analemmas), designed to ensure that one is almost directly overhead (elevation 60° or more)
+               over Japan at all times.</p>
+
+
+          <p>The primary purpose of QZSS is to increase the availability of GPS in Japan's numerous urban canyons, where only satellites at very high elevation can be
+             seen. A secondary function is performance enhancement, increasing the accuracy and reliability of GPS derived navigation solutions. The Quasi-Zenith
+              Satellites transmit signals compatible with the GPS L1C/A signal, as well as the modernized GPS L1C, L2C signal and L5 signals. This minimizes changes to
+              existing GPS receivers. Compared to standalone GPS, the combined system GPS plus QZSS delivers improved positioning performance via ranging correction data
+              provided through the transmission of submeter-class performance enhancement signals L1-SAIF and LEX from QZSS. It also improves reliability by means of failure
+              monitoring and system health data notifications. QZSS also provides other support data to users to improve GPS satellite acquisition.</p>
+
+        </div>
+
+      </div>
+</div>
+    {% endblock %}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/galileo"><span>Galileo</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/galileo/os"><span>System Description</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/galileo/applications"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a target="_blank" href="https://www.gsa.europa.eu/european-gnss/galileo/galileo-european-global-satellite-based-navigation-system"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>What is Galileo?</h1>
+        <div class="writeup">
+          <p>
+            The <em> Galileo </em> program is Europe's initiative for a state-of-the-art global satellite navigation system, providing a highly accurate, guaranteed global positioning service under civilian control. While providing autonomous navigation and positioning services, Galileo is interoperable with other GNSS systems such as GPS and GLONASS. The system, when fully deployed, will consist of 30 satellites, to be deployed in a staggered approach, and the associated ground infrastructure.
+          </p>
+          <p>It was created by the European Union through the European Space Agency (ESA), operated by the European GNSS Agency (GSA), headquartered in Prague, Czech Republic, with two ground operations centres in Fucino, Italy, and Oberpfaffenhofen, Germany. The €10 billion project is named after the Italian astronomer Galileo Galilei. One of the aims of Galileo is to provide an independent high-precision positioning system so European nations do not have to rely on the US GPS, or the Russian GLONASS systems, which could be disabled or degraded by their operators at any time</p>
+          <p>Galileo would provide improved positioning and timing information with significant positive implications for many European services and users.</p>
+          <div class="irnss-img thumbnail" style="margin-bottom:20px">
+            <img class="img-responsive" src="{% static "images/galelio_intro.jpg" %}" width="90%"></img>
+          </div>
+
+
+          <div>
+            <h3>GALILEO Services</h3>
+            <p>The Galileo mission and services were elaborated during the initial definition phase in consultation with user communities and the Member States. The high-performance services that will be provided once Galileo system is fully operational, are the following:</p>
+            <ol class="lis">
+              <li><strong>Open Service (OS):</strong> With positioning accurate to one metre, the freely accessible Open Service targets the mass market and is intended for motor vehicle navigation and location-based mobile telephone services. Free to the user, it provides positioning and synchronization information intended for high-volume satellite radio navigation applications; Galileo Open Service will include in the short term an authentication mechanism through Galileo OS-NMA. </li>
+              <li><strong>High Accuracy Service (HAS):</strong> a service complementing the OS by providing an additional navigation signal and added value services in a different frequency band. The HAS signal can be encrypted in order to control the access to the Galileo HAS services.</li>
+              <li><strong>Public Regulated Service (PRS):</strong> The Public Regulated Service is restricted to government-authorised users, for sensitive applications which require a high level of service continuity. It will be encrypted and designed to be more robust, with anti-jamming mechanisms and reliable problem detection. This service is intended for security and strategic infrastructure (e.g. energy, telecommunications and finance).</li>
+              <li><strong>Search and Rescue Service (SAR):</strong>Galileo's worldwide search and rescue service will help to forward distress signals to a rescue coordination centre by detecting emergency signals transmitted by beacons and relaying messages to them.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JaudGwe34Ro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/"><span>IRNSS</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/irnss/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/irnss/gagan/"><span>GAGAN</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Indian_Regional_Navigation_Satellite_System"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>What is IRNSS?</h1>
+
+        <div class="writeup">
+          <p>
+          <strong>The Indian Regional Navigation Satellite System (IRNSS)</strong>, with an operational name of <strong>NavIC (acronym for Navigation with Indian Constellation)</strong>. All thanks to the efforts of Indian Space Research Organization <strong><em>(ISRO)</em></strong>, which made India the proud owner of indigenous GPS and navigation system called <strong><em>NAVIC</em></strong>, since 2016.
+          </p>
+          <div class="irnss-img thumbnail">
+            <img class="img-responsive" src="{% static "images/IRNSSConcept.png" %}">
+          </div>
+          <p>The objective of the project is to implement an independent and indigenous regional spaceborne navigation system for national applications. The IRNSS design requirements call for a position <strong>accuracy of  20 m</strong> throughout India and within the region of coverage extending about 1500 km beyond. The system is expected to provide accurate real-time position, velocity and time observables for users on a variety of platforms with a 24 hour x 7 day service availability under all weather conditions</p>
+
+          <p>This is a regional navigation satellite system with 7 satellites working in tandem with each other to provide accurate coordinates of the targeted position. When you say that it is a regional satellite, it means that its real-time timing and positioning operations can span over India and any region in the Indian Territory extending up to 1,500 km.</p>
+          <div class="irnss-img thumbnail" style="text-align:center">
+            <img class="img-responsive" style="padding:20px 0" src="{% static "images/NAVIC.jpg" %}">
+            IRNSS Structure
+            <!-- <div class="caption-full"> -->
+                <!-- <h5>IRNSS Structure</h5> -->
+            <!-- </div> -->
+          </div>
+          <div>
+            <p>The IRNSS constellation architecture consists of the following elements:</p>
+            <ol class="lis">
+              <li><strong>Space segment:</strong>The IRNSS satellites carry a navigation payload in a redundant configuration.</li>
+              <li><strong>Ground segment:</strong> The ground segment is responsible for the maintenance and operation of the IRNSS constellation.</li>
+              <li><strong>User segment:</strong> Specially designed receivers and antennas are needed to receive the IRNSS signals.</li>
+            </ol>
+          </div>
+          <div style="text-align: center; margin-bottom: 20px;">
+            <a target="_blank" class="btn btn-primary" href="https://earth.esa.int/web/eoportal/satellite-missions/i/irnss">Read More...</a>
+          </div>
+        </div>
+
+      </div>
+</div>
+    {% endblock %}

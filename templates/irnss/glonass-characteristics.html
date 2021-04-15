@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/glonass"><span>Glonass</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/glonass/characteristics"><span>Characteristics</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a href="/glonass/applications"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+           <li><a target="_blank" href="https://gssc.esa.int/navipedia/index.php/GLONASS_General_Introduction"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>Characteristics of Glonass</h1>
+        <div class="writeup">
+          <h3>GLONASS Signal Structure:</h3>
+         <p>Each <em>GLONASS</em> system Space Vehicle (SV) "GLONASS" and "GLONASS-M" transmits navigational radiosignals on fundamental frequencies in two frequency sub-bands (L1 ~ 1,6 GHz, L2 ~ 1,25 GHz).
+
+           It is important to remark that GLONASS relies on the Frequency Division Multiple Access (FDMA) technique instead of the CDMA one used by other GNSS systems such GPS or GALILEO. Each satellite transmits navigation signals on its own carrier frequency, so that two GLONASS satellites may transmit navigation signals on the same carrier frequency if they are located in antipodal slots of a single orbital plane.
+
+
+           The frequency of transmission of each GLONASS satellite can be derived from the channel number k[5] by applying the following expressions:
+         </p>
+         <p>
+           <strong>fk1=f01+kΔf1, where f01=1602MHz and Δf1=562.5KHz</strong></p>
+         <p><strong>
+           fk2=f02+kΔf2, where f02=1246MHz and Δf2=437.5KHz</strong></p>
+         <p>  The modernization of GLONASS will add a new third frequency G3 in the ARNS band for the GLONASS-K satellites. This signal will provide a third civil C/A2 and military P2 codes, being especially suitable for Safety-Of-Life applications.</p>
+
+         <div class="irnss-img thumbnail" style="margin-bottom:20px">
+           <img class="img-responsive" src="{% static "images/GlonassSignalStructure.jpg" %}" width="90%"></img>
+         </div>
+
+
+         <div>
+           <h3>GLONASS Services:</h3>
+           <ol class="lis">
+
+             <li><strong>SPS:</strong> The Standard Positioning Service (or Standard Accuracy Signal service) is an open service, free of charge for worldwide users. The navigation signal was initially provided only in the frequency band G1, but from 2004 on the new GLONASS-M transmits also a second civil signal in G2.</li>
+             <li><strong>PPS:</strong> The Precise Positioning Service (or High Accuracy Signal service) is restricted to military and authorized users. Two navigation signals are provided in the two frequency bands G1 and G2.</li>
+           </ol>
+         </div>
+        </div>
+        <div class="irnss-img thumbnail" style="margin-bottom:20px">
+          <img class="img-responsive" src="{% static "images/GLONASS_Pvf.jpg" %}" width="90%"></img>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
