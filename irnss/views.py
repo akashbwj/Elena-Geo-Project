@@ -38,3 +38,13 @@ def glonass_characteristics(request):
     return render(request,"irnss/glonass-characteristics.html")
 def glonass_applications(request):
     return render(request,"irnss/glonass-applications.html")
+def beidou(request):
+    return render(request,"irnss/beidou.html")
+def beidou1(request):
+    return render(request,"irnss/beidou1.html")
+def beidou2(request):
+    return render(request,"irnss/beidou2.html")
+def beidou3(request):
+    return render(request,"irnss/beidou3.html")
+def beidou_applications(request):
+    return render(request,"irnss/beidou-applications.html")

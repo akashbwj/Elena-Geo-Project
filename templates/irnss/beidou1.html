@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/beidou"><span>BeiDou</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/beidou1"><span>BeiDou-1</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/beidou2"><span>BeiDou-2</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/beidou3"><span>BeiDou-3</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+
+            <li><a href="/beidou/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="http://en.beidou.gov.cn/"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>BeiDou-1</h1>
+
+        <div class="writeup">
+          <p>
+            BeiDou-1 was an experimental regional navigation system, which consisted of four satellites
+            (three working satellites and one backup satellite). The satellites themselves were based on the
+            Chinese DFH-3 geostationary communications satellite and had a launch weight of 1000 kg each.
+          </p>
+          <div class="thumbnail expand-on-small" >
+            <img class="img-responsive" src="{% static "images/map1.png" %}">
+            <div class="caption-full">
+              <h5>BeiDou's Coverage in 2000</h5>
+            </div>
+          </div>
+
+          <p>Unlike the American GPS, Russian GLONASS, and European Galileo positioning system, which use
+            medium Earth orbit satellites, BeiDou-1 used satellites in geostationary orbit. This means that the system does
+            not require a large constellation of satellites, but it also limits the coverage to areas on Earth
+            where the satellites are visible. The area that can be serviced is from longitude 70° E to 140° E
+            and from latitude 5° N to 55° N. A frequency of the system is 2491.75 MHz.</p>
+
+            <div style="text-align: center">
+              <a target="_blank" class="btn btn-primary" href="https://en.wikipedia.org/wiki/BeiDou#BeiDou-1">Read More...</a>
+            </div>
+
+        </div>
+        <div style="margin-top:20px" class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BFblI5SrmQw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+</div>
+    {% endblock %}

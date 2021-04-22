@@ -20,4 +20,10 @@ urlpatterns=[
     path('glonass/',views.glonass,name="glonass"),
     path('glonass/characteristics/',views.glonass_characteristics,name="glonass_characteristics"),
     path('glonass/applications/',views.glonass_applications,name="glonass_applications"),
+    path('beidou/',views.beidou,name="beidou"),
+    path('beidou1/',views.beidou1,name="beidou1"),
+    path('beidou2/',views.beidou2,name="beidou2"),
+    path('beidou3/',views.beidou3,name="beidou3"),
+    path('beidou/applications/',views.beidou_applications,name="beidou_applications"),
+
 ]

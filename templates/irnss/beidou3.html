@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/beidou"><span>BeiDou</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/beidou1"><span>BeiDou-1</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/beidou2"><span>BeiDou-2</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/beidou3"><span>BeiDou-3</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+
+            <li><a href="/beidou/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="http://en.beidou.gov.cn/"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1 >BeiDou-3</h1>
+
+        <div class="writeup">
+          <p>
+            The third phase of the BeiDou system (BDS-3) includes three GEO satellites, three IGSO satellites,
+             and twenty-four MEO satellites which introduce new signal frequencies B1C/B1I/B1A (1575.42 MHz),
+             B2a/B2b (1191.795 MHz), B3I/B3Q/B3A (1268.52 MHz), and Bs test frequency (2492.028 MHz). Interface
+             control documents on the new open signals were published in 2017–2018.
+          </p>
+          <div class="thumbnail irnss-img" >
+            <img class="img-responsive" src="{% static "images/_103363117_china_satellite_map640-nc.png" %}">
+          </div>
+          <p>On 23 June 2020, the BDS-3 constellation deployment was fully completed after the last satellite
+              was successfully launched at the Xichang Satellite Launch Center. BDS-3 satellites also include
+              SBAS (B1C, B2a, B1A) and
+              SAR capabilities.</p>
+
+              <div class="thumbnail irnss-img" >
+                <img class="img-responsive" src="{% static "images/bd3char.jpg" %}">
+              </div>
+
+
+            <p>Characteristics of the "I" signals on E2 and E5B are generally similar to the civilian codes of
+                GPS (L1-CA and L2C), but Compass signals have somewhat greater power. The notation of Compass
+                 signals used in this page follows the naming of the frequency bands and agrees with the notation
+                 used in the American literature on the subject, but the notation used by the Chinese seems to be
+                 different.</p>
+
+            <p>There has also been an experimental S band broadcast called "Bs" at 2492.028 MHz, following
+                similar experiments on Beidou-1.</p>
+
+
+
+                <h3 style="margin-top:40px;margin-bottom:15px;">Constellation</h3>
+                <div class="thumbnail text-center">
+                  <h4>Animation of BeiDou-3</h4>
+                  <div class="image-group">
+                    <div class="thumbnail" >
+                      <img class="img-responsive" src="{% static "images/Animation_of_BeiDou-3_orbit_around_Earth.gif" %}">
+                      <div class="caption-full">
+                        <h5>Around the Earth</h5>
+                      </div>
+                    </div>
+
+                    <div class="thumbnail" >
+                      <img class="img-responsive" src="{% static "images/Animation_of_BeiDou-3_orbit_around_Earth_-_Polar_view.gif" %}">
+                      <div class="caption-full">
+                        <h5>Around the Earth – Polar View</h5>
+                      </div>
+                    </div>
+
+                    <div class="thumbnail" >
+                      <img class="img-responsive" src="{% static "images/Animation_of_BeiDou-3_orbit_-_Earth_fixed_-_front_view.gif" %}">
+                      <div class="caption-full">
+                        <h5>Earth Fixed Frame – Equatorial View, Front</h5>
+                      </div>
+                    </div>
+
+                    <div class="thumbnail" >
+                      <img class="img-responsive" src="{% static "images/Animation_of_BeiDou-3_orbit_-_Earth_fixed_-_side_view.gif" %}">
+                      <div class="caption-full">
+                        <h5>Earth Fixed Frame – Equatorial View, Side</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <p>To know more about constellation <a href=https://en.wikipedia.org/wiki/BeiDou#Constellation target="_blank">Click here</a></p>
+
+
+                </div>
+
+
+
+        </div>
+
+      </div>
+</div>
+    {% endblock %}

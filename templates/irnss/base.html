@@ -50,6 +50,25 @@
         		width:100%!important;
         	}
         }
+        .beidou-appln h4{
+        	font-weight: 600;
+        }
+        .image-group{
+          display:flex;
+      		flex-wrap: wrap;
+          justify-content: space-between;
+          text-align: center!important;
+          width:100%!important;
+        }
+        .image-group .thumbnail{
+          width:45%!important;
+        }
+        @media(max-width:640px){
+          .image-group .thumbnail{
+            width:100%!important;
+          }
+        }
+
     </style>
 
   </head>
@@ -95,9 +114,12 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;display:flex;align-items:center"><img class="flag-img" src="{% static "images/china.PNG" %}" alt="">China <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Something</a></li>
-                  <li><a href="#">Something</a></li>
-                  <li><a href="#">Something</a></li>
+                  <li><a href="/beidou">BeiDou</a></li>
+                  <li><a href="/beidou1">BeiDou-1</a></li>
+                  <li><a href="/beidou2">BeiDou-2</a></li>
+                  <li><a href="/beidou3">BeiDou-3</a></li>
+                  <li><a href="/beidou/applications/">Applications of BeiDou</a></li>
+                  <li><a target="_blank" href="http://en.beidou.gov.cn/">Read more about BeiDou</a></li>
                 </ul>
               </li>
               <li class="dropdown">

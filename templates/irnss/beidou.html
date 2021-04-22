@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% extends "irnss/base.html" %}
+{% load static %}
+    {% block body_block %}
+    <div class="row wrapper">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul>
+            <li><a href="/beidou"><span>BeiDou</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/beidou1"><span>BeiDou-1</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/beidou2"><span>BeiDou-2</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a href="/beidou3"><span>BeiDou-3</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+
+            <li><a href="/beidou/applications/"><span>Applications</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+            <li><a target="_blank" href="http://en.beidou.gov.cn/"><span>Read More</span><i class="fa fa-chevron-right pull-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1>BeiDou</h1>
+
+        <div class="writeup">
+          <p>
+             The <strong>BeiDou Navigation Satellite System (BDS)</strong> is a Chinese
+              satellite navigation system. It consists of two separate satellite constellations.
+               The first BeiDou system, officially called the BeiDou Satellite Navigation Experimental System and
+               also known as BeiDou-1, consisted of three satellites which, beginning in 2000, offered limited coverage and navigation services,
+               mainly for users in China and neighboring regions. BeiDou-1 was decommissioned at the end of 2012.
+               On 23 June 2020, the final BeiDou satellite was successfully launched, the launch of the 55th
+               satellite in the Beidou family. The third iteration of the Beidou Navigation Satellite System
+               promises to provide global coverage for timing and navigation, offering an alternative to Russia's
+               GLONASS, the European Galileo positioning system, and America's GPS.
+         </p>
+         <div class="thumbnail expand-on-small" >
+           <img class="img-responsive" src="{% static "images/newbeidou_logo.png" %}">
+           <div class="caption-full">
+             <h5>BeiDou logo</h5>
+           </div>
+         </div>
+
+         <p>The second generation of the system, officially called the BeiDou Navigation Satellite System (BDS)
+            and also known as COMPASS or BeiDou-2, became operational in China in December 2011 with a partial
+            constellation of 10 satellites in orbit. Since December 2012, it has been offering services to
+            customers in the Asia-Pacific region.</p>
+
+         <p>According to China Daily, in 2015, fifteen years after the satellite system was launched, it was
+            generating a turnover of $31.5 billion per annum for major companies such as
+            China Aerospace Science and Industry Corporation,
+            AutoNavi Holdings Ltd., and China North Industries Group Corp.
+           </p>
+           <div style="text-align: center">
+             <a target="_blank" class="btn btn-primary" href="https://spectrum.ieee.org/tech-talk/aerospace/satellites/final-piece-of-chinas-beidou-navigation-satellite-system-comes-online">Read More...</a>
+           </div>
+
+        </div>
+        <div style="margin-top:20px" class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EyIQaszZPIo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+</div>
+    {% endblock %}
